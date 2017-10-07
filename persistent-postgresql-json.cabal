@@ -1,5 +1,5 @@
 name:                persistent-postgresql-json
-version:             0.1.0.0
+version:             0.1.1.0
 synopsis:            JSON/JSONB helpers and types for persistent-postgresql
 description:         JSON/JSONB helpers and types for persistent-postgresql
 license:             BSD3
@@ -24,8 +24,8 @@ library
                      , text                 >=1.2
                      , time                 >=1.4
                      , vector               >=0.10
-                     , persistent-template  >=2.1
-                     , persistent
+                     , persistent-template  >=2.5.2
+                     , persistent           >=2.7.0
 
 
 test-suite spec
@@ -40,9 +40,9 @@ test-suite spec
               , HUnit
               , aeson
               , resourcet
-              , persistent             >= 2.1
-              , persistent-template    >= 2.1
-              , persistent-postgresql  >= 2.1
+              , persistent             >= 2.7.0
+              , persistent-template    >= 2.5.2
+              , persistent-postgresql  >= 2.6.1
               , text                   >= 1.2
               , monad-logger
               , fast-logger
